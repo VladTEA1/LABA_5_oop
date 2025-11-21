@@ -18,7 +18,7 @@ void test_integer_stack() {
         std::cout << *it << " ";
     }
     std::cout << "\n";
-    
+    //[09-87654ahjk[o09-89s jbnes58e6d7efw PIoipnuy-0k8129up8yq23rfc097-u53twyv908-nyq3t4v298y
     std::cout << "Содержимое через for: ";
     for (const auto& num : numbers) {
         std::cout << num << " ";
@@ -66,4 +66,5 @@ int main() {
     return 0;
 
 }
+
 
