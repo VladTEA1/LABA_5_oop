@@ -14,7 +14,7 @@ fixed_memory_pool::~fixed_memory_pool() {
     ::operator delete(pool);
 }
                                                                                                                                                                                                                                                                                 
-
+//-=098765439087656789087656567890879685
     bool operator==(const DataStruct& other) const {
 void* fixed_memory_pool::do_allocate(size_t bytes, size_t alignment) {
     auto it = std::find_if(free_list.begin(), free_list.end(),
@@ -54,4 +54,5 @@ bool fixed_memory_pool::do_is_equal(const std::pmr::memory_resource& other) cons
     return this == &other;
 
 }
+
 
