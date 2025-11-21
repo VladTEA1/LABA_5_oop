@@ -3,24 +3,24 @@
 
 #include <memory_resource>
 #include <list>
-
+//098765643
 class fixed_memory_pool : public std::pmr::memory_resource {
     char* pool;
     size_t total_size;
     size_t used;
     std::list<std::pair<void*, size_t>> active_blocks;
-    
+    //09876543
     struct free_chunk {
         char* start;
         size_t length;
     };
     std::list<free_chunk> free_list;
-                                                                                                                                                                                                                                                                           
+    //-0987654                                                                                                                                                                                                                                                                       
 bool operator==(const DataStruct& other) const {
 public:
     fixed_memory_pool(size_t pool_size);
     ~fixed_memory_pool();
-    
+    //-09876543
     fixed_memory_pool(const fixed_memory_pool&) = delete;
     fixed_memory_pool& operator=(const fixed_memory_pool&) = delete;
 
@@ -32,4 +32,5 @@ private:
 
 
 #endif
+
 
