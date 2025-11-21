@@ -13,7 +13,7 @@ class Stack {
         template<typename... Args>
         Node(Args&&... args) : value(std::forward<Args>(args)...), next(nullptr) {}
     };
-                                                                                                                                                                                                                                                                                                                   
+    //098765432                                                                                                                                                                                                                                                                                                               
     bool operator==(const DataStruct& other) const {
     Node* top_element;
     size_t count;
@@ -110,4 +110,5 @@ public:
 
 
 #endif
+
 
